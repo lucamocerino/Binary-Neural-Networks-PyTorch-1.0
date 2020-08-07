@@ -1,4 +1,4 @@
-### XNOR Net (Original Paper) - PyTorch 
+# XNOR Net (Original Paper) - PyTorch 
 
 The project is organized as follows.
 
@@ -25,11 +25,11 @@ Network-in-Network on CIFAR10 dataset. All hyper parameters are in .yml file.
 ```sh
 $ python main.py app:yml/nin_cifar10.yml
 ```
-### References
+## References
 
 - XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks  https://arxiv.org/abs/1603.05279
 
-# Related Pubblications
+### Related Pubblications
   - CoopNet: Cooperative Convolutional Neural Network for Low-Power MCUs https://arxiv.org/abs/1911.08606
   - TentacleNet: A Pseudo-Ensemble Template for Accurate Binary Convolutional Neural Networks https://arxiv.org/abs/1912.10103
 
