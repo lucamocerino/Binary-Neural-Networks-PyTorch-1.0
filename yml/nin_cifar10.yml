@@ -11,6 +11,6 @@ test_batch_size: 100
 optimizer: 'adam' 
 lr: 0.01 
 gamma: 0.1 
-steps: [1, 2, 4] 
+steps: [80, 150] 
 epochs: 300 
 
