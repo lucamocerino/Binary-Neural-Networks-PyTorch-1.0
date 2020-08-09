@@ -14,7 +14,7 @@ The project is organized as follows.
 
 ### Installation
 
-XNOR Net requirement are in *requirement.txt*
+All packages are in *requirement.txt*
 Install the dependencies:
 
 ```sh
