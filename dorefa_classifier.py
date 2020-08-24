@@ -2,10 +2,9 @@ import os
 import numpy as np
 from torch import save, no_grad
 from tqdm import tqdm
-from models.xnor_layers import XNORConv2d
 import shutil
 
-class XnorClassifier():
+class DorefaClassifier():
     def __init__(self, model, train_loader=None, test_loader=None, device=None):
         super().__init__()
         self.model = model
@@ -61,10 +60,6 @@ class XnorClassifier():
             loss = criterion(output, target)
             losses.append(loss.item())
             loss.backward()
-
-            for m in self.model.modules():
-                if isinstance(m, XNORConv2d): 
-                    m.update_gradient()
 
             optimizer.step()
             

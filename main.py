@@ -1,5 +1,7 @@
 import torch
 from xnor_classifier import *
+from dorefa_classifier import *
+from bnn_classifier import *
 from config import FLAGS
 import importlib
 from models import *
@@ -17,8 +19,17 @@ test_loader = dataset.load_test_data(FLAGS.test_batch_size)
 
 model = eval(FLAGS.model)()
 model.to(device)
-classification = XnorClassifier(model, train_loader, test_loader, device)
 
+print(device)
+
+if FLAGS.bin_type == 'xnor':
+    classification = XnorClassifier(model, train_loader, test_loader, device)
+
+elif FLAGS.bin_type == 'bnn':
+    classification = BnnClassifier(model, train_loader, test_loader, device)
+
+elif FLAGS.bin_type == 'dorefa':
+    classification = DorefaClassifier(model, train_loader, test_loader, device)
 
 criterion = torch.nn.CrossEntropyLoss()
 criterion.to(device)

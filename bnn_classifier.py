@@ -2,16 +2,17 @@ import os
 import numpy as np
 from torch import save, no_grad
 from tqdm import tqdm
-from models.xnor_layers import XNORConv2d
 import shutil
 
-class XnorClassifier():
+
+class BnnClassifier():
     def __init__(self, model, train_loader=None, test_loader=None, device=None):
         super().__init__()
         self.model = model
         self.train_loader = train_loader
         self.test_loader = test_loader
         self.device = device
+
 
     @staticmethod
     def save_checkpoint(state, is_best, checkpoint):
@@ -45,30 +46,27 @@ class XnorClassifier():
         return top1_acc
 
 
+    def top1_accuracy(self):
+        return top1_accuracy(self.model, self.test_loader, self.device)
+
+
     def train_step(self, criterion, optimizer):
         losses = []
-        self.model.train()
-
         for data, target in tqdm(self.train_loader,
                 total=len(self.train_loader)):
-            
-
             data, target = data.to(self.device), target.to(self.device)
-            optimizer.zero_grad()
-            
-            
             output = self.model(data)
             loss = criterion(output, target)
             losses.append(loss.item())
+            optimizer.zero_grad()
             loss.backward()
-
-            for m in self.model.modules():
-                if isinstance(m, XNORConv2d): 
-                    m.update_gradient()
-
+            for p in self.model.modules():
+                if hasattr(p, 'weight_org'):
+                    p.weight.data.copy_(p.weight_org)
             optimizer.step()
-            
-
+            for p in self.model.modules():
+                if hasattr(p, 'weight_org'):
+                    p.weight_org.data.copy_(p.weight.data.clamp_(-1,1))
         return losses
 
     def train(self, criterion, optimizer, epochs, scheduler,

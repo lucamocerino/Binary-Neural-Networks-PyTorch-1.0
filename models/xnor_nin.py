@@ -1,5 +1,5 @@
 import torch.nn as nn
-from .binary_layers import * 
+from .xnor_layers import * 
 
 __all__ = ['nin']
 

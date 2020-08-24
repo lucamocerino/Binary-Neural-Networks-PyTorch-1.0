@@ -20,7 +20,7 @@ def load_train_data(batch_size=64, sampler=None):
     dataset = CIFAR10(os.path.join('datasets', 'cifar10'), train=True,
             download=True, transform=transform)
     loader = torch.utils.data.DataLoader(dataset, batch_size=batch_size,
-            shuffle=shuffle, sampler=sampler, num_workers=0, pin_memory=False)
+            shuffle=shuffle, sampler=sampler, num_workers=4, pin_memory=True)
 
     return loader
 
@@ -34,6 +34,6 @@ def load_test_data(batch_size=1000, sampler=None):
     dataset = CIFAR10(os.path.join('datasets', 'cifar10'), train=False,
             download=True, transform=transform)
     loader = torch.utils.data.DataLoader( dataset, batch_size=batch_size,
-            shuffle=False, sampler=sampler, num_workers=0, pin_memory=False)
+            shuffle=False, sampler=sampler, num_workers=4, pin_memory=True)
 
     return loader
