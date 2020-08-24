@@ -1,14 +1,17 @@
-# XNOR Net (Original Paper) - PyTorch 
+# Binary Neural Networks on PyTorch 
 
-This repository implements the popular paper: **XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks**: https://arxiv.org/abs/1603.05279.
+This repository implements three popular papers that introduced the concept of Binary Neural Networks: 
+- **XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks**: https://arxiv.org/abs/1603.05279.
+- **Binarized Neural Networks** :https://papers.nips.cc/paper/6573-binarized-neural-networks
+- **DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients** :https://arxiv.org/abs/1606.06160
 
 
 
 The project is organized as follows.
 
   - *models* folder contains CNN models (simple mlp, Network-in-Network, LeNet5)
-  - *xnor_classifier.py* contains the test and train procedures
-  - *models/binary_layers.py* contains the XNOR layers implementation (binary activation, binary conv and fully-connected layers, gradient update)
+  - *{type}_classifier.py* contains the test and train procedures; where type = {bnn, xnor, dorefa}
+  - *models/{type}_layers.py* contains the binarylayers implementation (binary activation, binary conv and fully-connected layers, gradient update);  where type = {bnn, xnor, dorefa}
   - *yml* folder contains configuration files with hyperparameters
   - *main.py* represents the entry file
 
