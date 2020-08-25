@@ -7,7 +7,7 @@ This repository implements three popular papers that introduced the concept of B
 
 
 
-The project is organized as follows.
+The project is organized as follows:
 
   - **models** folder contains CNN models (simple mlp, Network-in-Network, LeNet5)
   - **classifiers/{type}_classifier.py** contains the test and train procedures; where type = {bnn, xnor, dorefa}
