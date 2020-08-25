@@ -11,7 +11,7 @@ The project is organized as follows.
 
   - **models** folder contains CNN models (simple mlp, Network-in-Network, LeNet5)
   - **classifiers/{type}_classifier.py** contains the test and train procedures; where type = {bnn, xnor, dorefa}
-  - *+models/{type}_layers.py** contains the binarylayers implementation (binary activation, binary conv and fully-connected layers, gradient update);  where type = {bnn, xnor, dorefa}
+  - **models/{type}_layers.py** contains the binarylayers implementation (binary activation, binary conv and fully-connected layers, gradient update);  where type = {bnn, xnor, dorefa}
   - **yml** folder contains configuration files with hyperparameters
   - **main.py** represents the entry file
 
