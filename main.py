@@ -1,7 +1,7 @@
 import torch
-from xnor_classifier import *
-from dorefa_classifier import *
-from bnn_classifier import *
+from classifiers.xnor_classifier import *
+from classifiers.dorefa_classifier import *
+from classifiers.bnn_classifier import *
 from config import FLAGS
 import importlib
 from models import *
@@ -20,7 +20,6 @@ test_loader = dataset.load_test_data(FLAGS.test_batch_size)
 model = eval(FLAGS.model)()
 model.to(device)
 
-print(device)
 
 if FLAGS.bin_type == 'xnor':
     classification = XnorClassifier(model, train_loader, test_loader, device)

@@ -2,7 +2,7 @@ no_cuda: False
 checkpoint: "results/mlp_mnist" 
 filename: null
 pretrained: null
-
+bin_type: "xnor"
 model : "mlp"
 save_path: "results/mlp_mnist" 
 dataset : "mnist"
