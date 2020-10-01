@@ -1,6 +1,6 @@
 # Binary Neural Networks on PyTorch 
 
-![Binarization](bin.jpg)
+![Binarization](https://github.com/lucamocerino/Binary-Neural-Networks-PyTorch-1.0/blob/master/bin.png)
 
 
 This repository implements three popular papers that introduced the concept of Binary Neural Networks: 
