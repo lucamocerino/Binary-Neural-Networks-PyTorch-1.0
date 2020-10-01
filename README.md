@@ -1,5 +1,8 @@
 # Binary Neural Networks on PyTorch 
 
+![](bin.jpg)
+
+
 This repository implements three popular papers that introduced the concept of Binary Neural Networks: 
 - **XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks**: https://arxiv.org/abs/1603.05279.
 - **Binarized Neural Networks** :https://papers.nips.cc/paper/6573-binarized-neural-networks
