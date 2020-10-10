@@ -38,8 +38,8 @@ $ python main.py app:yml/nin_cifar10.yml
 ## Related Applications
 If you find this code useful in your research, please consider citing one of the works in this section.
 
-  - CoopNet: Cooperative Convolutional Neural Network for Low-Power MCUs https://arxiv.org/abs/1911.08606
-  - TentacleNet: A Pseudo-Ensemble Template for Accurate Binary Convolutional Neural Networks https://arxiv.org/abs/1912.10103
+  - CoopNet: Cooperative Convolutional Neural Network for Low-Power MCUs https://ieeexplore.ieee.org/abstract/document/8964993
+  - TentacleNet: A Pseudo-Ensemble Template for Accurate Binary Convolutional Neural Networks https://ieeexplore.ieee.org/abstract/document/9073982/
 
 License
 ----
