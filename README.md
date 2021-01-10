@@ -38,6 +38,7 @@ $ python main.py app:yml/nin_cifar10.yml
 ## Related Applications
 If you find this code useful in your research, please consider citing one of the works in this section.
 
+  - Fast and Accurate Inference on Microcontrollers With Boosted Cooperative Convolutional Neural Networks (BC-Net) https://ieeexplore.ieee.org/abstract/document/9275360
   - CoopNet: Cooperative Convolutional Neural Network for Low-Power MCUs https://ieeexplore.ieee.org/abstract/document/8964993
   - TentacleNet: A Pseudo-Ensemble Template for Accurate Binary Convolutional Neural Networks https://ieeexplore.ieee.org/abstract/document/9073982/
 
