@@ -4,9 +4,9 @@
 
 
 This repository implements three popular papers that introduced the concept of Binary Neural Networks: 
-- **XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks**: https://arxiv.org/abs/1603.05279.
-- **Binarized Neural Networks** :https://papers.nips.cc/paper/6573-binarized-neural-networks
-- **DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients** :https://arxiv.org/abs/1606.06160
+- [XNOR-Net: ImageNet Classification Using Binary Convolutional Neural Networks](https://arxiv.org/abs/1603.05279).
+- [Binarized Neural Networks](https://papers.nips.cc/paper/6573-binarized-neural-networks)
+- [DoReFa-Net: Training Low Bitwidth Convolutional Neural Networks with Low Bitwidth Gradients](https://arxiv.org/abs/1606.06160)
 
 
 
@@ -38,9 +38,9 @@ $ python main.py app:yml/nin_cifar10.yml
 ## Related Applications
 If you find this code useful in your research, please consider citing one of the works in this section.
 
-  - Fast and Accurate Inference on Microcontrollers With Boosted Cooperative Convolutional Neural Networks (BC-Net) https://ieeexplore.ieee.org/abstract/document/9275360
-  - CoopNet: Cooperative Convolutional Neural Network for Low-Power MCUs https://ieeexplore.ieee.org/abstract/document/8964993
-  - TentacleNet: A Pseudo-Ensemble Template for Accurate Binary Convolutional Neural Networks https://ieeexplore.ieee.org/abstract/document/9073982/
+  - [Fast and Accurate Inference on Microcontrollers With Boosted Cooperative Convolutional Neural Networks (BC-Net)](https://ieeexplore.ieee.org/abstract/document/9275360)
+  - [CoopNet: Cooperative Convolutional Neural Network for Low-Power MCUs](https://ieeexplore.ieee.org/abstract/document/8964993)
+  - [TentacleNet: A Pseudo-Ensemble Template for Accurate Binary Convolutional Neural Networks](https://ieeexplore.ieee.org/abstract/document/9073982/)
 
 License
 ----
